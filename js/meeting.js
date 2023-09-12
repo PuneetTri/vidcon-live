@@ -16,16 +16,6 @@ closeMessagesBtn.addEventListener("click", () => {
   sidePanel.style.display = "none";
 });
 
-window.addEventListener("resize", () => {
-  if (window.innerWidth >= 1024) {
-    if (sidePanel.style.display !== "block") sidePanel.style.display = "block";
-  }
-
-  if (window.innerWidth < 1024) {
-    if (sidePanel.style.display !== "none") sidePanel.style.display = "none";
-  }
-});
-
 messagesTabBtn.addEventListener("click", () => {
   messagesTabBtn.classList.add("tab-active");
   participantsTabBtn.classList.remove("tab-active");
